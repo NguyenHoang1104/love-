@@ -1,0 +1,7 @@
+#3c4667 (as you mentioned)
+#ffffff (white)
+#000000 (black)
+#f7f7f7 (light gray)
+#eaeaea (gray)
+#ff9900 (orange)
+#bfbfbf (dark gray)

@@ -1,0 +1,227 @@
+:root {
+    --dark: #000000;
+    --dark-gray: #bfbfbf;
+    --light-gray: #f7f7f7;
+    --orange: #ff9900;
+    --white: #fff;
+    --gray: #eaeaea;
+    --main-color: #3c4667;
+
+    --font-size-16: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* * * * * * * * * * * * * * * * Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: var(--dark);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--dark);
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--dark);
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover,
+.nav_links li a.active {
+    color: var(--orange);
+}
+
+button:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+
+/* * * * * * * * * * * * * * * * Header Section */
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.form-container form {
+    border: 2px solid var(--orange);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--dark)
+}
+
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 50px;
+}
+
+.form-container form select option {
+    background: #fff;
+}
+
+.form-container form .form-btn {
+    text-transform: capitalize;
+    cursor: pointer;
+    background: #ffe0b1;
+    height: 50px;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--dark);
+    font-weight: 500;
+    transition: .3s;
+}
+
+.form-container form .form-btn:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.form-container form p a {
+    color: var(--dark);
+}
+
+.form-container form a:hover {
+    color: var(--orange);
+    font-weight: 750;
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: var(--orange);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/* * * * * * * * * * * * ** * * * * Account */
+
+.profile-container {
+
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.profile {
+    padding-top: 125px;
+    border: 2px solid var(--orange);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+}
+
+.profile-avatar img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-info .name {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-info .email {
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--orange);
+}
+
+.btn-logout {
+    margin-top: 10px;
+    width: 90%;
+}
+
+/* * * * * * * * * * * * ** * * * * Account */
